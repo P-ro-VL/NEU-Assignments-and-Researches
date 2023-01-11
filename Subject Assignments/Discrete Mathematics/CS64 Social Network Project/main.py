@@ -57,7 +57,7 @@ vmax = max(nodeColors)
 # Vẽ các thành phần của đồ thị lên màn hình đồ họa
 nodeDraw = nx.draw_networkx_nodes(graph, pos, graph.nodes, node_color=nodeColors, cmap="Pastel1",
                                   vmin=vmin, vmax=vmax, label=True, node_size=nodeSize)
-edgeDraw = nx.draw_networkx_edges(graph, pos, edge_color="gray")
+edgeDraw = nx.draw_networkx_edges(graph, pos, node_size=nodeSize, edge_color="gray", arrowstyle="-|>")
 labelDraw = nx.draw_networkx_labels(graph, pos, font_size=12, font_color="black")
 
 # Vẽ thanh chỉ thị màu
