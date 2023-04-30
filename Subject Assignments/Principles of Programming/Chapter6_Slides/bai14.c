@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int table[50][50];
+int table[1000][1000];
 
 int max(int a, int b){
     return a >= b ? a : b;

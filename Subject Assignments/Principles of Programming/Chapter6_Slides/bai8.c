@@ -19,12 +19,16 @@ int main() {
     int isHundered = units[0] != 0, isTen = units[1] != 0, isUnit = units[2] != 0;
     if(!isHundered && !isTen && !isUnit){
         printf("khong");
-    }else{
+    }else if(!isHundered && units[1] == 1 && !isUnit){
+        printf("muoi");
+    }
+    else{
         if(isHundered){
             printf("%s tram ", speech[units[0]]);
         }
 
-        if(!isTen && isUnit){
+        if(!isHundered && !isTen){
+        }else if(!isTen && isUnit){
             printf("linh ");
         }else if(isTen){
             printf("%s muoi ", speech[units[1]]);

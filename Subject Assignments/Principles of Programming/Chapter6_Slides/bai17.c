@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    long n;
-    scanf("%d", &n);
+    long long int n;
+    scanf("%lld", &n);
 
-    int t = 0;
+    long long int t = 0;
     while(n > 0){
         t += n % 10;
         n /= 10;
     }
 
-    printf("%ld", t);
+    printf("%lli", t);
 }

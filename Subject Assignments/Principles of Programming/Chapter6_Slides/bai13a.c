@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-    scanf("%d", &n);
+    long long int n;
+    scanf("%lld", &n);
 
-    int k = n;
+    long long int k = n;
     while(k >= 10){
-        int sum = 0;
-        int h = k;
+        long long int sum = 0;
+        long long int h = k;
         while(h > 0){
             sum += h % 10;
             h /= 10;
         }
         k = sum;
     }
-    printf("%d", k);
+    printf("%lld", k);
 }
