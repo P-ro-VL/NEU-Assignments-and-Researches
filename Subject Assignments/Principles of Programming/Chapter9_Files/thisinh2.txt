@@ -1,0 +1,10 @@
+3
+001
+Pham Van Linh
+9.7500
+002
+Nguyen Hong Hanh
+6.5000
+003
+Duong Van Nga
+3.2500
