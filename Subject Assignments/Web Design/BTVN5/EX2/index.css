@@ -1,0 +1,49 @@
+header {
+  font-family: 'Chaney';
+  font-weight: 500;
+  font-size: 28pt;
+}
+
+nav {
+  font-family: 'SVN-Gilroy';
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  margin-bottom: 30px;
+}
+
+nav > p {
+  margin: 0 40px 0 0;
+  color: white;
+}
+
+article {
+  display: flex;
+  background-color: bisque;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0 0 10px 0;
+}
+
+article > img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+#content {
+  font-family: 'SVN-Gilroy';
+}
+
+#content > h2 {
+  padding: 0;
+  margin: 0;
+  font-family: 'SVN-Gilroy';
+  font-size: 16pt;
+}
+
+#content > p {
+  font-size: 12pt;
+}

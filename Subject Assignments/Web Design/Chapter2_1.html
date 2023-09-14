@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form > * {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label>Họ đệm:</label>
+      <input name="firstName" />
+
+      <br />
+
+      <label>Tên:</label>
+      <input name="lastName" />
+
+      <br />
+
+      <label>Giới tính</label>
+      <label> <input type="radio" name="gender" value="Male" />Nam </label>
+      <label> <input type="radio" name="gender" value="Female" />Nữ </label>
+
+      <br />
+
+      <label>Khoa:</label>
+      <select name="institude">
+        <option value="TMKTQT" selected>Viện TM&KTQT</option>
+        <option value="SITDE" selected>Viện CNTT&KTS</option>
+        <option value="MFE" selected>Khoa Toán Kinh tế</option>
+      </select>
+
+      <br />
+
+      <label>Ảnh đại diện:</label>
+      <input name="avatar" type="file" accept=".jpg, .png" />
+
+      <br />
+      <label>Đã học lập trình:</label>
+      <label>
+        <input type="checkbox" name="programmingLang" value="C" />C
+      </label>
+      <label>
+        <input type="checkbox" name="programmingLang" value="Java" />Java
+      </label>
+      <label>
+        <input type="checkbox" name="programmingLang" value="Python" />Python
+      </label>
+
+      <br />
+
+      <label>Giới thiệu bản thân:</label>
+      <br />
+      <textarea name="selfIntroduction" rows="5"></textarea>
+
+      <br />
+      <button type="submit">Xác nhận</button>
+      <button type="reset">Xóa</button>
+    </form>
+  </body>
+</html>

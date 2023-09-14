@@ -1,0 +1,51 @@
+header > h1 {
+  font-family: 'Chaney';
+  font-size: 24pt;
+}
+
+header > nav {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+header > nav > p {
+  margin-right: 40px;
+  font-family: 'SVN-Gilroy';
+  font-weight: bold;
+  color: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul > li {
+  display: flex;
+  background-color: beige;
+  margin: 10px 0 20px 0;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+ul > li > img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+ul > li > div > h2 {
+  margin: 0;
+  padding: 0;
+}
+
+ul > li > div > p {
+  margin: 1;
+}
+
+ul > li > div > #price {
+  font-weight: bold;
+  font-size: 16pt;
+}
