@@ -35,41 +35,64 @@ class Fraction {
             return this;
         }
         
-        Fraction* add(Fraction* f) {
-            if(deno == f->deno) {
-                nume += f->nume;
+        Fraction operator+(Fraction f) {
+            Fraction tg;
+            if(deno == f.deno) {
+                tg.nume = nume + f.nume;
             } else {
-                nume = nume*f->deno + deno*f->nume;
-                deno = deno*f->deno;
+                tg.nume = nume*f.deno + deno*f.nume;
+                tg.deno = deno*f.deno;
             }
-            return this;
+            return tg;
         }
         
-        Fraction* subtract(Fraction* f) {
-            if(deno == f->deno) {
-                nume -= f->nume;
+        Fraction operator-(Fraction f) {
+            Fraction tg;
+            if(deno == f.deno) {
+                tg.nume = nume - f.nume;
             } else {
-                nume = nume*f->deno - deno*f->nume;
-                deno = deno*f->deno;
+                tg.nume = nume*f.deno - deno*f.nume;
+                tg.deno = deno*f.deno;
             }
-            return this;
+            return tg;
         }
         
-        Fraction* multiply(Fraction* f) {
-            nume = nume*f->nume;
-            deno = deno*f->deno;
-            return this;
+        Fraction operator*(Fraction f) {
+            Fraction tg;
+            tg.nume = nume*f.nume;
+            tg.deno = deno*f.deno;
+            return tg;
         }
         
-        Fraction* devide(Fraction* f) {
-            return multiply(f->reverse());
+        Fraction operator/(Fraction f) {
+            return f*reverse();
+        }
+
+        bool operator==(Fraction f) {
+            return this->toDouble() == f.toDouble();
+        }
+
+        bool operator>(Fraction f){
+            return this->toDouble() > f.toDouble();
+        }
+
+        bool operator>=(Fraction f){
+            return *this > f || *this == f;
         }
         
-        Fraction* reverse() {
-            int temp = deno;
-            deno = nume;
-            nume = temp;
-            return this;
+        bool operator<(Fraction f){
+            return this->toDouble() < f.toDouble();
+        }
+
+        bool operator<=(Fraction f){
+            return *this < f || *this == f;
+        }
+
+        Fraction reverse() {
+            Fraction tg;
+            tg.deno = nume;
+            tg.nume = deno;
+            return tg;
         }
 
         double toDouble() {
@@ -95,7 +118,7 @@ int main() {
     
     Fraction sum = fractions[0];
     for(int i = 1; i < n; i++){
-        sum.add(&fractions[i]);
+        sum = sum + fractions[i];
     }
     cout << "Sum of fraction array is: ";
     sum.print();
@@ -105,7 +128,7 @@ int main() {
 
     for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) {
-            if(fractions[i].toDouble() < fractions[j].toDouble()) {
+            if(fractions[i] < fractions[j]) {
                 Fraction tg = fractions[i];
                 fractions[i] = fractions[j];
                 fractions[j] = tg;

@@ -1,0 +1,8 @@
+# ninja log v5
+11	430	7184349074231015	CMakeFiles/Northern_Round_2023.dir/main.cpp.obj	d433a711bfe47d46
+2	1285	7184385782253719	CMakeFiles/Northern_Round_2023.dir/A.cpp.obj	82571a3aa1338f44
+1387	1604	7184438262423670	Northern_Round_2023.exe	77fdc4b5535a4897
+1	291	7196430665237435	build.ninja	cf76b169af9f88f3
+16	1386	7184438260322862	CMakeFiles/Northern_Round_2023.dir/L.cpp.obj	dd6148e2e2ce96d4
+3	185	7196431376544779	CMakeFiles/Northern_Round_2023.dir/L_.cpp.obj	ab8755e4c1958d2d
+17	1139	7196431386081796	CMakeFiles/Northern_Round_2023.dir/test.cpp.obj	5d58403a2e60f735

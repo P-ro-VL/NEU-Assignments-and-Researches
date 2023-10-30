@@ -1,0 +1,60 @@
+#root {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#header {
+  background-color: green;
+  height: 100px;
+  width: 100%;
+}
+
+aside {
+  width: 25%;
+  height: 100px;
+  background-color: aquamarine;
+}
+
+a {
+  width: 50%;
+  height: 100px;
+  background-color: red;
+}
+
+#footer {
+  background-color: blue;
+  height: 100px;
+  width: 100%;
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+  /* #root {
+    flex-direction: column;
+  } */
+
+  #header {
+    order: 0;
+  }
+  #root > aside {
+    width: 50%;
+    order: 2;
+  }
+  #root > a {
+    width: 100%;
+    order: 1;
+  }
+  #footer {
+    order: 3;
+  }
+}
+
+@media (max-width: 600px) {
+  #root {
+    flex-direction: column;
+  }
+
+  #root > * {
+    width: 100%;
+  }
+}
