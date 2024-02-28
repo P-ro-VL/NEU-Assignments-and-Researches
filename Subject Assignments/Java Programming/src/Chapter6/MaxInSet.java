@@ -2,6 +2,10 @@ package src.Chapter6;
 
 import java.util.*;
 
+/**
+ * Viết phương thức findMax để tìm phần tử lớn nhất trong một Set. Nếu Set rỗng,
+ * phương thức sẽ trả về null.
+ */
 public class MaxInSet {
 
     public static void main(String[] args) {

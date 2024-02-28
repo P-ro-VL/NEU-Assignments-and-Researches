@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Cho một danh sách các số, hãy hiển thị ra những số nào bị lặp lại nhiều hơn 1 lần trong danh sách đó
+ */
 public class RepeatedNumbers {
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>(List.of(1, 2, 3, 4, 2, 3, 4, 4));

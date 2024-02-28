@@ -3,6 +3,9 @@ package src.Chapter6;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * Viết chương trình Java sử dụng Map để đếm số lần xuất hiện của mỗi từ trong một câu.
+ */
 public class WordCounting {
 
     public static void main(String[] args) {
