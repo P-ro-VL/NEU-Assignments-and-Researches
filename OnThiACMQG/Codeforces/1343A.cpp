@@ -6,28 +6,25 @@ int main()
 {
     int t;
     cin >> t;
-
+    cout << "===============";
     while (t--)
     {
         long long n;
         cin >> n;
 
         vector<long long> uoc;
-        for (long long i = 0; i < sqrt(n); i++)
+        for (int i = 1; i < sqrt(n); i++)
             if (n % i == 0)
                 uoc.push_back(i);
 
-        cout << uoc.size() << endl;
-
-        for (int k = 0; k < uoc.size(); k++)
+        for (int z = uoc.size() - 1; z >= 0; z--)
         {
-            long long i = uoc[k];
-            double loga = log((n / i) + 1) / log(2);
-            cout << loga;
+            int i = uoc[z];
+            double loga = log2((n / i) + 1);
             double intpart;
             if (modf(loga, &intpart) == 0.0)
             {
-                cout << i;
+                cout << i << " " << loga << endl;
                 break;
             }
         }
